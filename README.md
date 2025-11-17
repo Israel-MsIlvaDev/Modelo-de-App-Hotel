@@ -78,3 +78,4 @@ MauiAppHotel/
 │   └── Styles/
 │
 └── Platforms/
+
