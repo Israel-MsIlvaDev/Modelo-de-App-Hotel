@@ -74,7 +74,7 @@ MauiAppHotel/
 ├── SobrePage.xaml
 │
 ├── Resources/
-│ ├── Images/
-│ └── Styles/
+│   ├── Images/
+│   └── Styles/
 │
 └── Platforms/
