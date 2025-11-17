@@ -66,7 +66,7 @@ This version focuses on layout construction, UI components and basic page naviga
 
 ## 📄 Estrutura do Projeto
 
-\`\`\`
+
 MauiAppHotel/
 │
 ├── App.xaml
@@ -79,5 +79,3 @@ MauiAppHotel/
 │   └── Styles/
 │
 └── Platforms/
-\`\`\`
-
