@@ -67,15 +67,15 @@ This version focuses on layout construction, UI components and basic page naviga
 ## 📄 Estrutura do Projeto
 
 
-MauiAppHotel/
-│
-├── App.xaml
-├── AppShell.xaml
-├── ContratacaoHospedagem.xaml
-├── SobrePage.xaml
-│
-├── Resources/
-│   ├── Images/
-│   └── Styles/
-│
-└── Platforms/
+## 📄 Estrutura do Projeto
+
+- `MauiAppHotel/`
+  - `App.xaml`
+  - `AppShell.xaml`
+  - `ContratacaoHospedagem.xaml`
+  - `SobrePage.xaml`
+  - `Resources/`
+    - `Images/`
+    - `Styles/`
+  - `Platforms/`
+
