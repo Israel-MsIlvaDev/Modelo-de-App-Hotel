@@ -1,0 +1,69 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.ContratacaoHospedagem"
+             Title="Contratação de Hospedagem">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="10" Padding="20">
+
+            <Grid ColumnDefinitions="*, *, *" RowDefinitions="Auto" ColumnSpacing="10">
+
+                <Image 
+                    Grid.Column="0"
+                    Source="https://tinyurl.com/mtm5j2j9"
+                    HeightRequest="100"
+                    Aspect="AspectFill"
+                />
+
+                <Label 
+                    Grid.Column="1" 
+                    Grid.ColumnSpan="2"
+                    Text="Hotel Paraíso"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    VerticalOptions="Center"
+                />
+            </Grid>
+
+            <Line StrokeThickness="1" Stroke="Black" />
+
+            <Label Text="Escolha seu quarto:" />
+            <Picker x:Name="pckQuartos" Title="Selecione um quarto">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Suíte Master</x:String>
+                        <x:String>Quarto Família</x:String>
+                        <x:String>Quarto Casal</x:String>
+                        <x:String>Quarto Solteiro</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+
+            <Label Text="Quantidade de Adultos:" />
+            <Stepper x:Name="stpAdultos" Minimum="0" Maximum="10" Increment="1" ValueChanged="stpAdultos_ValueChanged" />
+
+            <Label x:Name="lblAdultos" Text="{Binding QntAdultos, StringFormat='{0} adultos'}" />
+
+            <Label Text="Quantidade de Crianças:" />
+            <Stepper x:Name="stpCriancas" Minimum="0" Maximum="10" Increment="1" ValueChanged="stpCriancas_ValueChanged" />
+
+            <Label x:Name="lblCriancas" Text="{Binding QntCriancas, StringFormat='{0} crianças'}" />
+
+            <Line StrokeThickness="1" Stroke="Black" />
+
+            <Label Text="Data de Check-in:" />
+            <DatePicker x:Name="dtpckCheckin" MinimumDate="01/01/2024" DateSelected="dtpckCheckin_DateSelected" />
+
+            <Label Text="Data de Check-out:" />
+            <DatePicker x:Name="dtpckCheckout" MinimumDate="01/01/2024" />
+
+            <Label x:Name="lblTotalEstadia" FontSize="18" FontAttributes="Bold" />
+
+            <Button Text="Calcular Total da Estadia" Clicked="Button_Clicked" />
+
+            <Label x:Name="lblValorTotal" FontSize="20" FontAttributes="Bold" HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
